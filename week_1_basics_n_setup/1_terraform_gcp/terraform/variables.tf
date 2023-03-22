@@ -1,12 +1,14 @@
 locals {
-  data_lake_bucket = "dtc_data_lake"
+  data_lake_bucket = "dtc-de-23_data_lake"
 }
 
-variable "project" {
+variable "gcp_project_id" {
   description = "Your GCP Project ID"
+  type = string
+  default = "dtc-de-week1"
 }
 
-variable "region" {
+variable "gcp_region" {
   description = "Region for GCP resources. Choose as per your location: https://cloud.google.com/about/locations"
   default = "europe-west6"
   type = string
@@ -17,7 +19,7 @@ variable "storage_class" {
   default = "STANDARD"
 }
 
-variable "BQ_DATASET" {
+variable "BQ_dataset" {
   description = "BigQuery Dataset that raw data (from GCS) will be written to"
   type = string
   default = "trips_data_all"
