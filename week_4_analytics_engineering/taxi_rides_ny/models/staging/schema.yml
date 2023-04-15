@@ -9,11 +9,11 @@ sources:
       # For postgres:
       database: production
 
-      schema: trips_data_all
+      schema: dtczoomcamp
 
       # loaded_at_field: record_loaded_at
       tables:
-        - name: green_tripdata
+        - name: green_taxidata
         - name: yellow_tripdata
          # freshness:
            # error_after: {count: 6, period: hour}
