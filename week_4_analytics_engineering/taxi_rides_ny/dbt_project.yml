@@ -16,7 +16,7 @@ profile: 'default'          # Using BigQuery + dbt cloud (Alternative A)
 model-paths: ["models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
-seed-paths: ["seeds"]
+seed-paths: ["data"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
