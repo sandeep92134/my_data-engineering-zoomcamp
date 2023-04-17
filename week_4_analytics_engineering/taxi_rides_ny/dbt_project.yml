@@ -16,7 +16,7 @@ profile: 'default'          # Using BigQuery + dbt cloud (Alternative A)
 model-paths: ["models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
-seed-paths: ["data"]
+seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
@@ -43,8 +43,8 @@ models:
 vars:
   payment_type_values: [1, 2, 3, 4, 5, 6]
 
-# data: 
-#     taxi_rides_ny:
-#         taxi_zone_lookup:
-#             +column_types:
-#                 locationid: numeric
+seeds: 
+    taxi_rides_ny:
+        taxi_zone_lookup:
+            +column_types:
+                locationid: numeric

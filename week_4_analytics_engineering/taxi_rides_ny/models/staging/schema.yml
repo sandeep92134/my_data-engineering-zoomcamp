@@ -7,7 +7,7 @@ sources:
       #database: taxi-rides-ny-339813
 
       # For postgres:
-      database: production
+      database: dtc-de-myzoomcamps23
 
       schema: dtczoomcamp
 
@@ -15,9 +15,8 @@ sources:
       tables:
         - name: green_taxidata
         - name: yellow_tripdata
-         # freshness:
-           # error_after: {count: 6, period: hour}
-
+          # freshness:
+          #   error_after: {count: 6, period: hour}
 models:
     - name: stg_green_tripdata
       description: >
