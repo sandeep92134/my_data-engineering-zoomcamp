@@ -7,7 +7,8 @@ version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'pg-dbt-workshop'
+#profile: 'pg-dbt-workshop' # Using Postgres + dbt core (locally) (Alternative B)
+profile: 'default'          # Using BigQuery + dbt cloud (Alternative A)
 
 # These configurations specify where dbt should look for different types of files.
 # The `source-paths` config, for example, states that models in this project can be
